@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <title>UTS PEMROGRAMAN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Toko Kelontong</h1>
+    <p>Hitung total belanja dan dapatkan diskon sesuai jumlah belanja.</p>
+
+    <label for="nama">Nama Pembeli:</label>
+    <input type="text" id="nama" placeholder="contoh: Finzi">
+    <br>
+    <label for="harga">Harga Satuan (Rp):</label>
+    <input type="number" id="harga" placeholder="contoh:5000">
+    <br>
+    <label for="jumlah">Jumlah Barang:</label>
+    <input type="number" id="jumlah" placeholder="contoh: 5">
+    <br>
+    <label for="status">Status Pembeli:</label>
+    <select id="status">
+      <option value="biasa">Biasa</option>
+      <option value="member">Member</option>
+    </select>
+
+    <button onclick="hitungBelanja()">Hitung</button>
+
+    <p id="hasil" class="hasil"></p>
+</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
